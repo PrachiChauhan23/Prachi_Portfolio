@@ -17,12 +17,12 @@ export default function HomePage() {
       </div>
 
       {/* Heading */}
-      <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white leading-tight">
-        Hello, my name is <span className="text-indigo-600 dark:text-indigo-400">Prachi Chauhan</span>
+      <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-6 text-gray-900  leading-tight">
+        Hello, my name is <span className="text-indigo-600 ">Prachi Chauhan</span>
       </h1>
 
       {/* Description */}
-      <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mb-10">
+      <p className="text-lg sm:text-xl text-gray-600  max-w-2xl mb-10">
         I&apos;m a passionate developer creating modern and responsive web applications. Explore my work and learn more about my journey in the world of technology.
       </p>
 
@@ -39,7 +39,7 @@ export default function HomePage() {
 
         <Link
           href="/about"
-          className="inline-flex items-center justify-center px-6 py-3 text-lg font-medium text-indigo-600 border border-indigo-600 rounded-md hover:bg-indigo-50 dark:hover:bg-gray-800 transition hover:scale-105"
+          className="inline-flex items-center justify-center px-6 py-3 text-lg font-medium text-indigo-600 border border-indigo-600 rounded-md hover:bg-indigo-50  transition hover:scale-105"
         >
           <UserCircle className="mr-2 h-5 w-5" />
           About Me

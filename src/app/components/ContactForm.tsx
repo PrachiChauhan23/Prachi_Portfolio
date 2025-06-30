@@ -25,45 +25,45 @@ export default function ContactForm() {
     return (
         <form
             onSubmit={handleSubmit}
-            className="max-w-xl mx-auto space-y-6 bg-white dark:bg-gray-900 p-6 rounded-lg shadow"
+            className="max-w-xl mx-auto space-y-6 bg-white  p-6 rounded-lg shadow"
         >
             <p className="text-3xl font-headline text-accent">Get In Touch</p>
             <p>Fill out the form below, and I&apos;ll get back to you as soon as possible.</p>
             <div>
-                <label className="block text-sm font-medium mb-1 text-gray-800 dark:text-gray-200">Full Name</label>
+                <label className="block text-sm font-medium mb-1 text-gray-800 ">Full Name</label>
                 <input
                     type="text"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full border border-gray-300 dark:border-gray-700 p-2 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+                    className="w-full border border-gray-300  p-2 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white  text-gray-900 "
                     placeholder='Your name'
                 />
             </div>
 
             <div>
-                <label className="block text-sm font-medium mb-1 text-gray-800 dark:text-gray-200">Email Address</label>
+                <label className="block text-sm font-medium mb-1 text-gray-800 ">Email Address</label>
                 <input
                     type="email"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full border border-gray-300 dark:border-gray-700 p-2 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+                    className="w-full border border-gray-300  p-2 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white  text-gray-900 "
                     placeholder='your.email@example.com'
                 />
             </div>
 
             <div>
-                <label className="block text-sm font-medium mb-1 text-gray-800 dark:text-gray-200">Message</label>
+                <label className="block text-sm font-medium mb-1 text-gray-800 ">Message</label>
                 <textarea
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
                     rows={4}
                     required
-                    className="w-full border border-gray-300 dark:border-gray-700 p-2 rounded resize-none focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+                    className="w-full border border-gray-300  p-2 rounded resize-none focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white  text-gray-900 "
                     placeholder='Tell me how can i help you...'
                 ></textarea>
             </div>

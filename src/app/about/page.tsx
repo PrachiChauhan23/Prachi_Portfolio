@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { Briefcase, Code, Coffee, Award } from 'lucide-react';
 
 const skills = [
-    {name:'Java',icon:Code},
+    { name: 'Java', icon: Code },
     { name: 'React', icon: Code },
     { name: 'Next.js', icon: Code },
     { name: 'JavaScript', icon: Code },
@@ -44,10 +44,10 @@ export default function AboutPage() {
                 />
 
                 {/* Intro */}
-                <h1 className="text-4xl font-bold mb-6 text-center text-gray-900 dark:text-white">
+                <h1 className="text-4xl font-bold mb-6 text-center text-gray-900 ">
                     About Me
                 </h1>
-                <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl text-center mb-12">
+                <p className="text-lg text-gray-600  max-w-3xl text-center mb-12">
                     Hello! I&apos;m a dedicated and results-oriented software developer with a passion for
                     creating elegant and efficient solutions. .Eager to
                     contribute to innovative projects, enhance code quality, and explore emerging technologies to drive future growth. Always looking for
@@ -57,14 +57,14 @@ export default function AboutPage() {
                 {/* Skills & Experience */}
                 <div className="grid md:grid-cols-2 gap-10 w-full ">
                     {/* Skills Card */}
-                    <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-6 transition-shadow hover:shadow-xl">
-                        <h2 className="text-2xl font-semibold mb-4 flex items-center text-indigo-600 dark:text-indigo-400">
+                    <div className="bg-white  rounded-lg shadow-lg p-6 transition-shadow hover:shadow-xl">
+                        <h2 className="text-2xl font-semibold mb-4 flex items-center text-indigo-600 ">
                             <Award className="h-6 w-6 mr-2" />
                             My Skills
                         </h2>
                         <ul className="space-y-3">
                             {skills.map((skill) => (
-                                <li key={skill.name} className="flex items-center text-gray-800 dark:text-gray-200">
+                                <li key={skill.name} className="flex items-center text-gray-800 ">
                                     <skill.icon className="mr-3 h-5 w-5 text-indigo-500" />
                                     {skill.name}
                                 </li>
@@ -73,39 +73,26 @@ export default function AboutPage() {
                     </div>
 
                     {/* Experience Card */}
-                    <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-6 transition-shadow hover:shadow-xl">
-                        <h2 className="text-2xl font-semibold mb-4 flex items-center text-indigo-600 dark:text-indigo-400">
+                    <div className="bg-white  rounded-lg shadow-lg p-6 transition-shadow hover:shadow-xl">
+                        <h2 className="text-2xl font-semibold mb-4 flex items-center text-indigo-600 ">
                             <Briefcase className="h-6 w-6 mr-2" />
                             Professional Experience
                         </h2>
                         <div className="space-y-6">
                             {experience.map((exp) => (
                                 <div key={exp.company}>
-                                    <h3 className="text-xl font-bold text-gray-900 dark:text-white">{exp.role}</h3>
-                                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                                    <h3 className="text-xl font-bold text-gray-900 ">{exp.role}</h3>
+                                    <p className="text-sm text-gray-500 ">
                                         {exp.company} | {exp.duration}
                                     </p>
-                                    <p className="mt-1 text-gray-700 dark:text-gray-300">{exp.description}</p>
+                                    <p className="mt-1 text-gray-700">{exp.description}</p>
                                 </div>
                             ))}
                         </div>
                     </div>
                 </div>
 
-                {/* Beyond the Code */}
-                {/* <div className="mt-12 text-center max-w-3xl">
-                    <h2 className="text-2xl font-semibold mb-4 flex items-center justify-center text-indigo-600 dark:text-indigo-400">
-                        <Coffee className="h-6 w-6 mr-2" />
-                        Beyond the Code
-                    </h2>
-                    <p className="text-lg text-gray-600 dark:text-gray-300">
-                        When I&apos;m not coding, I enjoy exploring new hiking trails, experimenting with new
-                        recipes in the kitchen, and diving into a good science fiction novel. I believe in a
-                        healthy work-life balance and always look for opportunities to learn and grow, both
-                        personally and professionally.
-                    </p>
-                </div>*/}
-            </div> 
+            </div>
         </section>
     );
 }

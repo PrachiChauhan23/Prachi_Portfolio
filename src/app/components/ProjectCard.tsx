@@ -11,7 +11,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ title, description, imageUrl, projectUrl }: ProjectCardProps) {
   return (
-    <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col h-full">
+    <div className="bg-white  border border-gray-200  rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col h-full">
       <div className="relative aspect-video w-full border-none" >
         <Image
           src={imageUrl}
@@ -24,8 +24,8 @@ export default function ProjectCard({ title, description, imageUrl, projectUrl }
       </div>
 
       <div className="p-4 flex-grow">
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">{title}</h3>
-        <p className="text-gray-600 dark:text-gray-400 text-sm">{description}</p>
+        <h3 className="text-lg font-semibold text-gray-900  mb-1">{title}</h3>
+        <p className="text-gray-600  text-sm">{description}</p>
       </div>
 
       {projectUrl && (

@@ -40,7 +40,7 @@ export default function Navbar() {
                         <Link
                             key={href}
                             href={href}
-                            className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100  hover:text-indigo-600 transition"
+                            className="px-3 py-2 rounded-md text-sm font-medium text-gray-700  hover:bg-gray-100  hover:text-indigo-600 transition"
                         >
                             <Icon className="inline-block w-4 h-4 mr-2" />
                             {label}
