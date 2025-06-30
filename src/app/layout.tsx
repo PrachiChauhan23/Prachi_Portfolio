@@ -3,7 +3,7 @@ import './globals.css';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 export const metadata: Metadata = {
-  title: 'StaticFolio - My Portfolio',
+  title: 'Portfolio-Prachi Chauhan',
   description: 'A personal portfolio website built with Next.js and Tailwind CSS.',
 };
 
