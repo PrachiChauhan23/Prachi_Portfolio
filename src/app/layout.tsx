@@ -22,7 +22,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="font-sans antialiased text-gray-900  bg-white  flex flex-col min-h-screen">
+      <body className="font-sans antialiased text-gray-900 [background-color:#f5f5f5] flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />
